@@ -1,0 +1,4 @@
+gunicorn
+bottle==0.12.19
+sentry-sdk==0.16.2
+
