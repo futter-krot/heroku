@@ -2,6 +2,9 @@
 import sentry_sdk, os
 from bottle import Bottle, run, request
 from sentry_sdk.integrations.bottle import BottleIntegration
+
+from dotenv import load_dotenv
+load_dotenv()
 sentry_sdk.init(
     dsn=os.environ['SENTRY_DSN'], 
     integrations=[BottleIntegration()]
