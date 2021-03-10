@@ -1,3 +1,4 @@
+# https://guarded-stream-62460.herokuapp.com САЙТ
 import sentry_sdk, os
 from bottle import Bottle, run, request
 from sentry_sdk.integrations.bottle import BottleIntegration
