@@ -2,8 +2,9 @@
 import sentry_sdk, os
 from bottle import Bottle, run, request
 from sentry_sdk.integrations.bottle import BottleIntegration
+SENTRY_DSN = "https://3e774449b21c49c78d2d5ae9ed82aef2@o528104.ingest.sentry.io/5666696"
 sentry_sdk.init(
-    dsn=os.environ.get("https://3e774449b21c49c78d2d5ae9ed82aef2@o528104.ingest.sentry.io/5666696"), 
+    dsn=os.environ.get(SENTRY_DSN), 
     integrations=[BottleIntegration()]
 )
 app = Bottle()
